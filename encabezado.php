@@ -1,10 +1,10 @@
 <?php
-
-// Función para traer lista de noticias
-function traerListNoticias() {
-    // Ver para traerme lo de listar noticias en contenido.php
-}
-
+    /**
+     * Función para traer lista de noticias
+     */
+    function traerListNoticias() {
+        // Ver para traerme lo de listar noticias en contenido.php
+    }
 ?>
 <link href="./css/estiloshead.css" rel="stylesheet">
 

@@ -10,17 +10,17 @@
 <body>
     <div id="container">
         <?php
-        // Incluimos la conexión, encabezado y lateral
-        include("conexion.php");
-        $link = conectarse();
-        include("encabezado.php");
-        include("lateral.php");
+            // Incluimos la conexión, encabezado y lateral
+            include("conexion.php");
+            $link = conectarse();
+            include("encabezado.php");
+            include("lateral.php");
 
-        // Seleccionamos los registros
-        $instruccion = "SELECT * FROM noticias";
-        // ORDER BY titulo ASC
-        $rs = mysqli_query($link, $instruccion) or die("Fallo en la Consulta");
-        $n = mysqli_num_rows($rs);
+            // Seleccionamos los registros
+            $instruccion = "SELECT * FROM noticias";
+            // ORDER BY titulo ASC
+            $rs = mysqli_query($link, $instruccion) or die("Fallo en la Consulta");
+            $n = mysqli_num_rows($rs);
         ?>
         <section>
             <article>
@@ -34,7 +34,7 @@
                         <th>Fecha</th>
                     </tr>
                     <?php
-                    while ($campo = mysqli_fetch_array($rs)) {
+                        while ($campo = mysqli_fetch_array($rs)) {
                     ?>
                     <tr>
                         <td><?php echo $campo["id"]; ?></td>
@@ -45,14 +45,14 @@
                         <td><?php echo $campo["fecha"]; ?></td>
                     </tr>
                     <?php
-                    }
-                    mysqli_close($link);
+                        }
+                        mysqli_close($link);
                     ?>
                 </table>
             </article>
         </section>
         <?php
-        include("piepag.php");
+            include("piepag.php");
         ?>
     </div>
 </body>

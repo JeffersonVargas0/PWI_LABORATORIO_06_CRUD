@@ -9,11 +9,11 @@
 <body>
     <div id="container">
         <?php
-        include("conexion.php");
-        include("encabezado.php");
-        include("lateral.php");
-        include("contenido.php");
-        include("piepag.php");
+            include("conexion.php");
+            include("encabezado.php");
+            include("lateral.php");
+            include("contenido.php");
+            include("piepag.php");
         ?>
     </div>
 </body>
