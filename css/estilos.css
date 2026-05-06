@@ -1,0 +1,39 @@
+#container {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    border: 3px solid rgb(95, 2, 33);
+}
+
+table {
+    width: 100%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 13px;
+    text-align: justify;
+    border: 1px solid rgb(77, 2, 2);
+}
+
+th {
+    width: auto;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px;
+    background: #08012c;
+    border-top: 4px solid #081b5e;
+    border-bottom: 1px solid rgb(77, 2, 2);
+    color: rgb(240, 242, 247);
+}
+
+td {
+    width: auto;
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid coral;
+}
+
+tr:hover td {
+    background: #d0dafd;
+    color: #339;
+}
